@@ -5,6 +5,17 @@
 		p.normal {line-height: 150%}
 		p.big {line-height: 200%}
 		p.justify {text-align: justify}
+		
+		#bg{
+			width:900px;height:300px;
+			background：url(images/img_bg_2.jpg);
+			}
+		#sm{/*滚动对象样式*/
+			overflow:hidden;/*隐藏Div中多余的内容，增加图片会一起滚动*/
+			width:1000px;height:375px;
+			margin:0 auto;
+			padding-top:30px;
+		}
 	</style>
 	
 	
@@ -48,6 +59,9 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- User Customization -->
+	<link rel="stylesheet" href="css/box.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -107,7 +121,8 @@
 								<!--<span class="heading-meta">About Us</span>-->
 								<h2><font face="verdana"> &nbsp &nbsp &nbsp &nbsp </font></h2>	
 								<h2><font face="verdana">Zheng Yue</font></h2>			
-									<p><font face="verdana"><b> PhD candidate, school of EEE<br/>
+									<p><font face="verdana"><b> PhD candidate<br/>
+									School of Electrical and Electronic Engineering <br/>
 									Nanyang Technological University (NTU), Singapore. <br/>
 									Email: <a href="mailto:yzheng015@e.ntu.edu.sg">yzheng015@e.ntu.edu.sg</a></b></font></p>
 									<!-- <p><font face="verdana" color="green">&nbsp &nbsp &nbsp &nbsp News</font></p> -->
@@ -714,66 +729,82 @@ device. One effective way to eliminate the anonymity is to build a random oracle
 					
 					<!--	<div class="row">  -->
 					<!-- <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft"> images\gallery\IMG_7324.jpg--> 
-						<div class="col-md-4 col-sm-6">
-							<!--<div class="blog-entry">-->
-								<img src="images\gallery\IMG_73241.jpg" class="img-responsive" alt="Prof.Chang became the Fellow of IEEE.">
-								<div class="desc">
-									<span><small>ISCAS 2018 </small> | <small> Florence </small> | <small> Prof.Chang became the Fellow of IEEE.</small></span>
-									<!--<h3><a href="blog.html">Renovating National Gallery</a></h3>-->
-									<!--<h3>Prof.Chang became the Fellow of IEEE.</h3>-->
-							<!--	</div> -->
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-								<!--<a href="blog.html" class="blog-img"><img src="images/gallery/IMG_7325.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>-->
-								<img src="images\gallery\hhh.jpg" class="img-responsive" alt="With Prof.Chang and Mrs. Chang">
-								<div class="desc">
-									<span><small> ISCAS 2018 </small> |<small>Florence</small> |  <small> With Prof. Chang and Mrs. Chang. </small></span>
-									<!--<h3><a href="blog.html">Wordpress for a Beginner</a></h3>-->
-									<!--<h3>Wenye Liu, Prof. Chang, Mrs. Chang and me.</h3>-->
-								</div>
-						</div>
-						<div class="col-md-4 col-sm-6" >
-								<img src="images/my_iscas_2018.jpg" class="img-responsive" alt="My ISCAS presentation">
-								<div class="desc">
-									<span><small>ISCAS 2018 </small> | <small>Florence </small> | <small> Presenting in ISCAS 2018. </small></span>
-									<!--<h3><a href="blog.html">Make website from scratch</a></h3>   -->
-									
-								</div>
-						</div>							
-						<div class="col-md-4 col-sm-6" data-animate-effect="fadeInLeft"> 
-								<img src="images\gallery\IMG_7327.jpg" class="img-responsive" alt="Gala dinner">
-								<div class="desc">
-									<span><small>ISCAS 2018</small> | <small>Florence </small> | <small> Gala Dinner</small></span>
-									<!--<h3><a href="blog.html">Make website from scratch</a></h3>     -->
-									
-								</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-								<img src="images\gallery\IMG_7329.jpg" class="img-responsive" alt="CES2018">
-								<div class="desc">
-									<span><small>ICCE 2018 </small> | <small>Las vegas </small> | <small> CES 2018 </small> </span>
-									<!--<h3><a href="blog.html">Wordpress for a Beginner</a></h3>-->
-								</div>
-						</div>					
-						<div class="col-md-4 col-sm-6">
-								<img src="images\gallery\3mt_ntu11.jpg" class="img-responsive" alt="CES2018">
-								<div class="desc">
-									<span><small>3MT_NTU 2017 </small> | <small> Jul.21.2017 </small> | <small> People's Choice Award </small> </span>
-									<!--<h3><a href="blog.html">Wordpress for a Beginner</a></h3>-->
-								</div>
-						</div>	
-						<div class="col-md-4 col-sm-6">
-								<a href="https://www.youtube.com/watch?v=id4bwTs9I7k&t=36s"><img src="images\gallery\3mt_sg1.png" class="img-responsive" alt="3MT_Singapore"></a>
-								<div class="desc">
-									<span><small>3MT_Singapore </small> | <small>Aug. 4. 2017</small> | <small> People's Choice Award </small> </span>
-									<!--<h3><a href="blog.html">Wordpress for a Beginner</a></h3>-->
-								</div>
-						</div>
 					
-
-					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=18Q7iKCuBVsH62Ey76Md_yL48mF-nqwFI" width="640" height="480"></iframe>
+					<div id="bg">
+		<div id="sm">	<!--滚动div-->
+				<table>		<!--外表格1x2,且第2单元格是空的-->
+					<tr>
+						<td id="Pic1">
+							<table>	<!--内表格1x9,存放9张图片-->
+								<tr>
+									<td><img src="images\gallery\IMG_73241.jpg"  width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\hhh.jpg"  width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\IMG_7327.jpg"  width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\my_iscas_2018.jpg" width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\IMG_7329.jpg"  width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\3mt_ntu11.jpg" width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+							    </tr>
+						   </table>
+					   </td>
+					<td id="Pic2"></td>
+				    </tr>
+				</table>
+		</div>
+	</div>
+<script>
+	Pic2.innerHTML=Pic1.innerHTML;//复制一组图片，但被隐藏
+	function scrolltoleft(){//定义向左移动的方法
+		sm.scrollLeft++;//改变层的水平坐标，实现向左移动
+		if(sm.scrollLeft>=Pic1.scrollWidth)//需要复位
+			sm.scrollLeft=0;//层的位置复位，浏览器窗口的宽度有限的
+	}
 	
+	var MyMar=setInterval(scrolltoleft,40); //定时器，方法名后不可加()
+	
+	function mouseover(x){//放大图片
+		x.style.width="210";
+		x.style.height="256"
+		x.style.cursor="pointer"
+	}
+	function mouseout(x){//图片复原
+		x.style.width="105";
+		x.style.height="128"
+	}
+ 
+	//两面两行是用方法响应对象的事件
+	sm.onmouseover=function(){//匿名方法（函数）
+		clearInterval(MyMar);//停止滚动
+	}
+	
+	sm.onmouseout=function(){
+		MyMar = setInterval(scrolltoleft,40);//继续滚动
+	}
+</script>						
+				
+					
+				<!--	
+				<div class="box">
+				<ul class="list">
+					<li><img class="slide" src="images\gallery\IMG_73241.jpg" height="375" /></li>
+					<li><img class="slide" src="images\gallery\hhh.jpg" height="375" /></li>
+					<li><img class="slide" src="images\gallery\my_iscas_2018.jpg" height="375" /></li>
+					<li><img class="slide" src="images\gallery\IMG_7327.jpg" height="375" /></li>
+					<li><img class="slide" src="images\gallery\IMG_7329.jpg" height="375" /></li>
+					<li><img class="slide" src="images\gallery\3mt_ntu11.jpg" height="375" /></li>
+					<li><a href="https://www.youtube.com/watch?v=id4bwTs9I7k&t=36s"><img class="slide" src="images\gallery\3mt_sg.jpg" height="375" /></a></li>
+				</ul>
+			<div class="index">
+				<a href="javascript:" class="index_1">1</a>
+				<a href="javascript:" class="index_2">2</a>
+				<a href="javascript:" class="index_3">3</a>
+				<a href="javascript:" class="index_4">4</a>
+				<a href="javascript:" class="index_5">5</a>
+				<a href="javascript:" class="index_6">6</a>
+				<a href="javascript:" class="index_7">7</a>
+			</div>
+				</div>
+				-->
+				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=18Q7iKCuBVsH62Ey76Md_yL48mF-nqwFI" width="640" height="480"></iframe> 
 				</div>
 			</section>
 			
