@@ -7,12 +7,12 @@
 		p.justify {text-align: justify}
 		
 		#bg{
-			width:900px;height:320px;
+			width:900px;height:280px;
 			background：url(images/img_bg_2.jpg);
 			}
 		#sm{/*滚动对象样式*/
 			overflow:hidden;/*隐藏Div中多余的内容，增加图片会一起滚动*/
-			width:1000px;height:375px;
+			width:900px;height:375px;
 			margin:0 auto;
 			padding-top:30px;
 		}
@@ -730,19 +730,19 @@ device. One effective way to eliminate the anonymity is to build a random oracle
 					<!--	<div class="row">  -->
 					<!-- <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft"> images\gallery\IMG_7324.jpg--> 
 					
-					<div id="bg">
+		<div id="bg">
 		<div id="sm">	<!--滚动div-->
 				<table>		<!--外表格1x2,且第2单元格是空的-->
 					<tr>
 						<td id="Pic1">
 							<table>	<!--内表格1x9,存放9张图片-->
 								<tr>
-									<td><img src="images\gallery\IMG_73241.jpg" width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-									<td><img src="images\gallery\hhh.jpg"  width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-									<td><img src="images\gallery\3mt_ntu11.jpg" width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-									<td><a href="https://www.youtube.com/watch?v=id4bwTs9I7k&t=36s"><img src="images\gallery\3mt_sg1.png" width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></a></td>
-									<td><img src="images\gallery\IMG_73291.jpg" width="250" height="188"  onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
-									<td><img src="images\gallery\my_iscas_2018.JPG" width="250" height="188" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\IMG_73241.jpg" width="300" height="225" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\hhh.jpg"  width="300" height="225" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\3mt_ntu11.jpg" width="300" height="225" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><a href="https://www.youtube.com/watch?v=id4bwTs9I7k&t=36s"><img src="images\gallery\3mt_sg1.png" width="300" height="225" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></a></td>
+									<td><img src="images\gallery\IMG_73291.jpg" width="300" height="225"  onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
+									<td><img src="images\gallery\my_iscas_2018.JPG" width="300" height="225" onmouseover="mouseover(this)" onmouseout="mouseout(this)"/></td>
 							    </tr>
 						   </table>
 					   </td>
@@ -778,15 +778,16 @@ device. One effective way to eliminate the anonymity is to build a random oracle
 	}
 	
 	sm.onmouseout=function(){
-		MyMar = setInterval(scrolltoleft,40);//继续滚动
+		MyMar = setInterval(scrolltoleft,20);//继续滚动
 	}
 </script>						
 		
-				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=18Q7iKCuBVsH62Ey76Md_yL48mF-nqwFI" width="640" height="480"></iframe>
+				
 				</div>
+				<div class="box"> <iframe src="https://www.google.com/maps/d/u/0/embed?mid=18Q7iKCuBVsH62Ey76Md_yL48mF-nqwFI" width="640" height="480"></iframe> </div>
 			</section>
 			
-			
+<!--
 			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="colorlib-narrow-content">
@@ -813,7 +814,7 @@ device. One effective way to eliminate the anonymity is to build a random oracle
 				</div>
 			</div>
 			
-			
+-->			
 
 		</div><!-- end:colorlib-main -->
 	</div><!-- end:container-wrap -->
