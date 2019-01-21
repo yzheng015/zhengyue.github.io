@@ -220,9 +220,10 @@ figure {
 }
     #colorlib-aside #colorlib-main-menu .collapse {
            display: block !important;
-            height: auto!important;
+            
         
       /*  
+        height: auto!important;
       display: block !important; */
 
 }
