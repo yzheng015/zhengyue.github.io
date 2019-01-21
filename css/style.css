@@ -219,7 +219,13 @@ figure {
       
 }
     #colorlib-aside #colorlib-main-menu .collapse {
-      display: block !important; }
+           display: none!important;
+            height: auto!important;
+        
+      /*  
+      display: block !important; */
+
+}
     #colorlib-aside #colorlib-main-menu ul {
       text-align: center;
       margin: 0;
