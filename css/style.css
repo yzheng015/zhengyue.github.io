@@ -219,7 +219,7 @@ figure {
       
 }
     #colorlib-aside #colorlib-main-menu .collapse {
-           display: none!important;
+           display: block !important;
             height: auto!important;
         
       /*  
